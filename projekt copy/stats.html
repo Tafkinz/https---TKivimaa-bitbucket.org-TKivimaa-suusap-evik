@@ -1,0 +1,24 @@
+<div id="content">
+<h1 id="pealkiri">Statistics</h1>
+<br>
+<p id="stat">Most games played</p>
+<?php 
+echo "<p>".$maxGames['nimi']." - ".$maxGames['played']."</p>";
+?>
+<p id="stat">Most wins</p>
+<?php
+echo "<p>".$maxWins['nimi']." - ".$maxWins['wins']."</p>";
+?>
+<p id="stat">Most losses</p>
+<?php
+echo "<p>".$maxLoss['nimi']." - ".$maxLoss['wins']."</p>";
+?>
+<p id="stat">Highest winning percentage</p>
+<?php
+echo "<p>".$bestPercent[0]." - ".sprintf("%01.1f", $bestPercent[1])."%</p>";
+?>
+<p id="stat">Longest winning streak</p>
+<p>T3 - 6 wins</p>
+<p id="stat">Highest player usage</p>
+<p>Tafka - 95%</p>
+</div>

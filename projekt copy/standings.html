@@ -1,0 +1,31 @@
+<div id="content">
+<h1 id="pealkiri">Standings</h1>
+<p>The list of top clans with their rankings</p>
+
+
+
+<table id="tabel">
+<tr>
+<th>Clan</th>
+<th>Total Games</th>
+<th>Wins</th>
+<th>Losses</th>
+<th>Points</th>
+
+
+<?php 
+	include ("teams.php");
+    foreach($teams as $tiim) {
+    echo "<tr>";
+      echo "<td>".$tiim['nimi']."</td>";
+      echo "<td>".$tiim['played']."</td>";
+      echo "<td>".$tiim['wins']."</td>";  
+      echo "<td>".$tiim['losses']."</td>";
+      echo "<td>".$tiim['points']."</td>";
+    echo "</tr>";
+    }
+?>
+</tr>
+</table> 
+
+</div>

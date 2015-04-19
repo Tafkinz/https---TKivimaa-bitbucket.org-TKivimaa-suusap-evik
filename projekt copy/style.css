@@ -1,0 +1,198 @@
+body {
+	background-image: url('img/back.jpg');
+	background-size:100% 100%;
+	background-color: black;
+	margin:0px;
+}
+#main {
+	min-width:600px;
+	max-width:800px;
+	border:2px solid;
+	border-color:black;
+	margin:auto;
+}
+a {
+	color:black;
+	}
+a:visited {
+	color:grey;
+	}
+a:hover {
+	color:DarkGrey;
+	}
+a:active {
+	color:LightGrey;
+	}
+#trofee {
+	border:1px solid Darkred;
+	vertical-align:baseline;
+	border-radius:4px;
+	}
+#pealkiri {
+	text-align:left;
+	font-size:30px;
+	color:rgb(100,130,130);
+	margin-top:5px;
+}
+#banner {
+width:100%; height:auto;
+margin:auto;
+text-align:center;
+}
+#banner img { 
+	display:block;
+	margin: 0 auto;
+}
+#tabel {
+	min-width:450px;
+	padding:4px;
+	border:1px solid;
+	border-color:DarkGrey;
+	}
+
+#stat {
+	padding:3px;
+	text-decoration:underline;
+	font-size:18px;
+	}
+#statpilt {
+	float:right;
+	margin: 0px 0px 15px 15px;
+	}
+#input {
+	max-width:80px;
+	background:rgba(128,128,128,0.4);
+	border-radius:6px;
+	}
+#feedback {
+	background:rgba(148,148,148,0.5);
+	padding:1px;
+	border:1px solid black;
+	border-radius:8px;
+	}
+#send {
+	background:rgba(148,148,148,0.7);
+	padding:3px;
+	border:1px solid black;
+	border-radius:8px;
+	}
+#message {
+	background:rgba(148,148,148,0.5);
+	padding:3px;
+	border:1px solid black;
+	border-radius:8px;
+	max-width:600px;
+	max-height:400px;
+	}
+#tabel td {
+	border:1px solid;
+	border-color:black;
+	}
+#blank td {
+	vertical-align:top;
+	border:none;
+	padding:3px;
+	}
+#blank {
+	border:none;
+	padding:2px;
+	}
+#vasak {
+	vertical-align:baseline;
+	}
+#content {
+	padding:15px;
+	min-height:300px;
+	text-align:left ;
+	background: rgba(200, 100 , 80, 0.4);
+}
+#copyright {
+	background: rgba(0,0,0,0.5);
+	color:darkgrey;
+	padding:2px 2px;
+	}
+.clearfix {
+	text-align:center;
+	}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:rgba(100,0,0,0.3);
+    background-image: url("img/liner.jpg");
+}
+ 
+.menu {
+    width:100%;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+	float:initial;
+    display:inline-block;
+    position:relative;
+    font-size:15px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:rgba(100,0,0,0.4);
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:15px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}

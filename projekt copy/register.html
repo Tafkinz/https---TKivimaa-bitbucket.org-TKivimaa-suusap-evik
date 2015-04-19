@@ -1,0 +1,25 @@
+<div id="content">
+<h1 id="pealkiri">Register</h1>
+<form action="?page=register" method="POST">
+<table>
+<tr>
+<td>Username:</td>
+<td><input id ="input" type="text" name="user" <?php if(!empty($_POST["user"])) echo "value=\"".htmlspecialchars($_POST["user"])."\" "; ?>></td>
+</tr>
+<td>Password:</td>
+<td><input id="input" type="password" name="pass"></td>
+</tr>
+<tr>
+<td>Retype password</td>
+<td><input id="input" type="password" name="pass"></td>
+</tr></table>
+<input id="input" type="submit" value="Submit">
+</form>
+<br>
+Already an user? Click <a href="?page=login">here</a> to log in<br>
+<?php 
+	foreach($vead as $viga) {
+	echo "<p style='color:red;'>$viga</p>";
+	}
+	?>
+</div>
